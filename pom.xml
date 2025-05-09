@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>SpringStoreTest</artifactId>
+    <artifactId>SpringStore</artifactId>
     <version>1.0.0</version>
     <name>SpringStore</name>
     <description>SpringStore</description>
@@ -60,6 +60,7 @@
         <dependency>
             <artifactId>flyway-mysql</artifactId>
             <groupId>org.flywaydb</groupId>
+            <version>11.8.1</version>
         </dependency>
         <dependency>
             <artifactId>lombok</artifactId>
@@ -154,7 +155,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>10.15.0</version>
+                <version>11.8.1</version>
                 <configuration>
                     <url>jdbc:mysql://localhost:3306/store_api?createDatabaseIfNotExist=true</url>
                     <user>root</user>
